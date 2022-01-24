@@ -1,5 +1,5 @@
 /* Google font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&display=swap');
 
 
@@ -30,6 +30,10 @@ h6{
     min-height: 100vh;
     background-position: center;
     background-size: cover;
+}
+
+.carousel-caption h1{
+    font-weight: 500;
 }
 
 /* Wedding Story section */
