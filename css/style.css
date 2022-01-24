@@ -33,6 +33,7 @@ body{
 
 .pricing__three{
     background-color:#ffd43b;
+    border-top: 2px solid blue !important; 
     position: relative;
 }
 
