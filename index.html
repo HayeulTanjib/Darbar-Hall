@@ -154,6 +154,8 @@
   </div>
 </section>
 
+
+
 <!-- FAQ  -->
 <section class="faq__section">
   <div class="container">
@@ -230,9 +232,43 @@
 </div>
 </section>
 
+<!-- Toast Section-->
+<section class="toast__section py-5">
+  <button onclick="see()" class="btn btn-primary">Tap to see OFFER!</button>
+  <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
 
+      <img src="icons/gift.png" class="rounded me-2" alt="...">
+      <strong class="me-auto">Darbar Discount!</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      15% off on First Booking <i class="fas fa-smile"></i>
+    </div>
+  </div>
+</section>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script> <!-- JS CDN -->
+
+
+<!-- Toast JS -->
+<script>
+  var option = {
+    animation: true,
+    delay: 20000
+  }
+
+  var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+var toastList = toastElList.map(function (toastEl) {
+  return new bootstrap.Toast(toastEl, option)
+})
+
+function see(){
+  for(var i=0; i<toastList.length;i++){
+    toastList[i].show();
+  }
+}
+</script>
 </body>
 </html>
