@@ -6,6 +6,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+/* Hero Section */
 .hero__section{
     min-height: 100vh;
 }
@@ -14,5 +15,34 @@ body{
     min-height: 100vh;
     background-position: center;
     background-size: cover;
+}
+
+
+/* Pricing Table Section */
+.pricing__desc{
+    padding: 10px;
+}
+
+.pricing__desc ul li{
+    list-style: none;
+    background-image: url('../icons/check.png');
+    background-repeat: no-repeat;
+    padding-left: 28px;
+    line-height: 1.6;
+}
+
+.pricing__three{
+    background-color:#ffd43b;
+    position: relative;
+}
+
+.hot__tag{
+    position: absolute;
+    top: -19px;
+    right: 8px;
+}
+
+.hot__tag p{
+    font-size: 10px;
 }
 
