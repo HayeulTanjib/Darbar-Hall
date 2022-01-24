@@ -55,5 +55,11 @@ body{
 }
 
 
+.vl {
+    border-left: 1px solid black;
+    height: 400px;
+    margin-left: 30px;
+  }
+
 
 
